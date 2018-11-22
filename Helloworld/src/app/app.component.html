@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<br/><br/>
+  <h1>Welcome to Parent component</h1>
+Please enter some text:<input type='text' name='uname' #uname (keypress)="0"/><br/>
+value of <b>child component is {{parentData}}</b>
+<br/><br/><br/>
+<hr/>
+<app-childcomponent (childEvent)="parentData=$event" [parentData]="uname.value" ></app-childcomponent>
+</div>
